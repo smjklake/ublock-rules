@@ -1,0 +1,36 @@
+! Title: Youtube Blocklist
+! Version: 20240423
+! Expires: 3 days
+
+! Distraction free youtube
+!  block recommendations
+www.youtube.com###secondary
+www.youtube.com###sections
+www.youtube.com###ticker > .ytd-masthead.style-scope
+
+!  block recommendations at the end of the video
+! do not forget to disable autoplay at the end of the video. To do that: turn off ublock for a sec and then disable autoplay -> then turn it on again
+www.youtube.com##.ytp-ce-element
+www.youtube.com##.ytp-show-tiles.videowall-endscreen.ytp-player-content.html5-endscreen
+
+! block home screen stuff
+www.youtube.com##ytd-browse.ytd-page-manager[page-subtype="home"]
+
+! block mobile home screen stuff
+m.youtube.com##div[tab-identifier="FEwhat_to_watch"]
+
+! block recommendations and comments on mobile
+m.youtube.com##ytm-item-section-renderer.scwnr-content:nth-of-type(2)
+m.youtube.com##ytm-comment-section-renderer.scwnr-content
+
+!Secondary results
+youtube.com##.ytd-watch-next-secondary-results-renderer
+
+! Likes and other under video buttons
+www.youtube.com###menu > .ytd-watch-metadata.style-scope
+
+! Subscribe Button
+www.youtube.com##.ytd-subscribe-button-renderer.style-scope.smartimation--enable-masking.smartimation
+
+! Homepage side bar buttons.
+www.youtube.com##ytd-mini-guide-renderer.ytd-app.style-scope
