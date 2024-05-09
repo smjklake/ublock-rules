@@ -1,7 +1,7 @@
 ! Title: Youtube Blocklist
 ! Description: Remove everything but video and search
-! Version: 1.0.0
-! Last modified: 2024-04-23 17:20:25
+! Version: 1.1.0
+! Last modified: 2024-05-09 07:12:05
 ! Expires: 2 weeks (update frequency)
 ! Homepage: https://github.com/smjklake/ublock-rules
 ! License: https://github.com/smjklake/ublock-rules/main/LICENSE
@@ -17,24 +17,6 @@ www.youtube.com###ticker > .ytd-masthead.style-scope
 www.youtube.com##.ytp-ce-element
 www.youtube.com##.ytp-show-tiles.videowall-endscreen.ytp-player-content.html5-endscreen
 
-! block home screen stuff
-www.youtube.com##ytd-browse.ytd-page-manager[page-subtype="home"]
-
-! block mobile home screen stuff
-m.youtube.com##div[tab-identifier="FEwhat_to_watch"]
-
-! block recommendations and comments on mobile
-m.youtube.com##ytm-item-section-renderer.scwnr-content:nth-of-type(2)
-m.youtube.com##ytm-comment-section-renderer.scwnr-content
 
 !Secondary results
 youtube.com##.ytd-watch-next-secondary-results-renderer
-
-! Likes and other under video buttons
-www.youtube.com###menu > .ytd-watch-metadata.style-scope
-
-! Subscribe Button
-www.youtube.com##.ytd-subscribe-button-renderer.style-scope.smartimation--enable-masking.smartimation
-
-! Homepage side bar buttons.
-www.youtube.com##ytd-mini-guide-renderer.ytd-app.style-scope
