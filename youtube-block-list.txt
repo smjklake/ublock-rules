@@ -1,7 +1,7 @@
 ! Title: Youtube Blocklist
 ! Description: Remove most unwanted reccomendations and UI sections
-! Version: 1.1.0
-! Last modified: 2024-05-09 07:24:00
+! Version: 1.2.0
+! Last modified: 2024-05-30 09:40:00
 ! Expires: 2 weeks (update frequency)
 ! Homepage: https://github.com/smjklake/ublock-rules
 ! License: https://github.com/smjklake/ublock-rules/main/LICENSE
@@ -16,3 +16,6 @@ www.youtube.com###scroll-container > .yt-chip-cloud-renderer.style-scope
 ! Sidebar Sections I don't want
 www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(3)
 www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(4)
+
+! Popups
+www.youtube.com##tp-yt-paper-dialog.ytd-popup-container.style-scope > .ytd-popup-container.style-scope
